@@ -6,6 +6,7 @@ body {
   background-color: wheat;
   position: sticky;
   top: 0;
+  z-index: 1;
 }
 
 .mainBody {
@@ -82,7 +83,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  flex-shrink: 0;
 }
 
 .profile_top {
@@ -221,8 +221,6 @@ body {
     width: 80%;
     position: absolute;
     top: 110px;
-    z-index: -1;
-    cursor: pointer;
   }
 
   .profile_top + div {
@@ -230,7 +228,6 @@ body {
     top: 250px;
     left: 0;
     width: 100%;
-    z-index: -1;
   }
 
   .profile_middle {
@@ -250,7 +247,6 @@ body {
     position: absolute;
     top: 170px;
     left: 15px;
-    z-index: -1;
   }
 
   .album {
