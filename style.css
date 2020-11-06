@@ -103,15 +103,15 @@ body {
   background-color: transparent;
   border: 1px solid #968c83;
   border-radius: 3px;
-}
-
-.profile_Edit_2 {
-  display: none;
+  outline: none;
 }
 
 .profile_icon {
   font-size: 20px;
   cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: transparent;
 }
 
 .profile_middle > span {
@@ -148,6 +148,14 @@ body {
 
 .album_menu > li {
   padding: 10px 30px;
+}
+
+.album_menu button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  text-align: center;
 }
 
 .album_menu i {
@@ -210,16 +218,13 @@ body {
   }
 
   .profile_Edit {
-    font-weight: bold;
-    cursor: pointer;
-    background-color: transparent;
-    border: 1px solid #968c83;
-    border-radius: 3px;
     width: 80%;
     position: absolute;
     top: 110px;
     z-index: -1;
+    cursor: pointer;
   }
+
   .profile_top + div {
     position: absolute;
     top: 250px;
