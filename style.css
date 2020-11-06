@@ -33,7 +33,6 @@ body {
   border: 1px solid #968c83;
   border-radius: 3px;
   text-align: center;
-  cursor: pointer;
 }
 
 .top_icons {
@@ -142,6 +141,10 @@ body {
   padding: 10px 30px;
 }
 
+.album_menu i {
+  padding-right: 10px;
+}
+
 .album_pictures {
   display: flex;
   flex-wrap: wrap;
@@ -193,16 +196,11 @@ body {
     font-size: 30px;
   }
 
-  .profile_Edit {
-    display: none;
-  }
-
   .profile_icon {
     font-size: 25px;
   }
 
-  .profile_Edit_2 {
-    display: block;
+  .profile_Edit {
     font-weight: bold;
     cursor: pointer;
     background-color: transparent;
