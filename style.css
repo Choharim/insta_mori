@@ -26,12 +26,18 @@ body {
   font-size: 25px;
   cursor: pointer;
   width: 300px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  text-align: left;
 }
 
 .top_search > input {
+  width: 250px;
   padding: 2px 3px;
   border: 1px solid #968c83;
   border-radius: 3px;
+  outline: none;
   text-align: center;
 }
 
@@ -43,10 +49,13 @@ body {
   width: 300px;
 }
 
-.top_icons > .top_icon {
+.top_icons .top_icon {
   font-size: 20px;
   padding: 10px;
   cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: transparent;
 }
 
 .top_icons img {
