@@ -14,58 +14,70 @@
       href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header class="top_bar">
-      <span class="top_logo">Instagram</span>
-      <form class="top_search">
-        <input type="text" placeholder="검색" />
-      </form>
-      <ul class="top_icons">
-        <li class="top_icon"><i class="fas fa-home"></i></li>
-        <li class="top_icon"><i class="far fa-paper-plane"></i></li>
-        <li class="top_icon"><i class="far fa-compass"></i></li>
-        <li class="top_icon"><i class="far fa-heart"></i></li>
-        <li class="top_icon">
-          <img src="C:\Users\조하림\Desktop\insta_mori\picture\7.jpg" />
-        </li>
-      </ul>
+    <header class="top">
+      <div class="top_bar">
+        <span class="top_logo">Instagram</span>
+        <form class="top_search">
+          <input type="text" placeholder="검색" />
+        </form>
+        <ul class="top_icons">
+          <li class="top_icon"><i class="fas fa-home"></i></li>
+          <li class="top_icon"><i class="far fa-paper-plane"></i></li>
+          <li class="top_icon"><i class="far fa-compass"></i></li>
+          <li class="top_icon"><i class="far fa-heart"></i></li>
+          <li class="top_icon">
+            <img src="C:\Users\조하림\Desktop\insta_mori\picture\7.jpg" />
+          </li>
+        </ul>
+      </div>
     </header>
-    <section class="profile">
-      <div class="profile_picture"></div>
-      <div class="profile_info">
-        <div class="profile_top">
-          <span class="profile_name"></span>
-          <button class="profile_Edit">프로필 편집</button>
-          <span class="profile_icon"></span>
+    <main class="mainBody">
+      <section class="profile">
+        <div class="profile_picture"><img src="picture/7.jpg" /></div>
+        <div class="profile_info">
+          <div class="profile_top">
+            <span class="profile_name">bam_mori</span>
+            <button class="profile_Edit">프로필 편집</button>
+            <span class="profile_icon"><i class="fas fa-cog"></i></span>
+          </div>
+          <div class="profile_middle">
+            <span>게시물 <span class="profile_number">651</span></span>
+            <span>팔로워 <span class="profile_number">198</span></span>
+            <span>팔로우 <span class="profile_number">25</span></span>
+          </div>
+          <div class="profile_bottom">
+            <span>Mori_ღ</span>
+            <span
+              ><img src="picture/9.jpg" class="profile_cherry" />mori-daily<img
+                src="picture/9.jpg"
+                class="profile_cherry"
+            /></span>
+            <span>모리와의 추억 차곡차곡 쌓는 중-</span>
+          </div>
         </div>
-        <div class="profile_middle">
-          <span>게시물 651</span>
-          <span>팔로워 198</span>
-          <span>팔로우 25</span>
+      </section>
+      <section class="album">
+        <ul class="album_menu">
+          <li><i class="fas fa-th"></i>게시물</li>
+          <li><i class="far fa-bookmark"></i>저장됨</li>
+          <li><i class="fas fa-user-tag"></i>태그됨</li>
+        </ul>
+        <div class="album_pictures">
+          <img src="picture/1.jpg" />
+          <img src="picture/2.jpg" />
+          <img src="picture/3.jpg" />
+          <img src="picture/4.jpg" />
+          <img src="picture/5.jpg" />
+          <img src="picture/6.jpg" />
+          <img src="picture/8.jpg" />
         </div>
-        <div class="profile_bottom">
-          <span>Mori</span>
-          <span>mori-daily</span>
-          <span>모리와의 추억 차곡차곡 쌓는 중-</span>
-        </div>
-      </div>
-    </section>
-    <section class="album">
-      <ul class="album_menu">
-        <li>게시물</li>
-        <li>저장됨</li>
-        <li>태그됨</li>
-      </ul>
-      <div class="album_pictures">
-        <img src="picture/1.jpg" />
-        <img src="picture/2.jpg" />
-        <img src="picture/3.jpg" />
-        <img src="picture/4.jpg" />
-        <img src="picture/5.jpg" />
-        <img src="picture/6.jpg" />
-        <img src="picture/8.jpg" />
-      </div>
-    </section>
+      </section>
+    </main>
   </body>
 </html>

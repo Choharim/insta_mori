@@ -2,22 +2,37 @@ body {
   background-color: #fff5ea;
 }
 
-.top_bar {
+.top {
   background-color: wheat;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   position: sticky;
   top: 0;
+}
+
+.mainBody {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.top_bar {
+  width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .top_logo {
   font-family: "Lobster", cursive;
   font-size: 25px;
+  cursor: pointer;
 }
 
 .top_search > input {
   text-align: center;
+  cursor: pointer;
+  padding: 2px 3px;
+  border: 1px solid #968c83;
+  border-radius: 3px;
 }
 
 .top_icons {
@@ -29,11 +44,104 @@ body {
 .top_icons > .top_icon {
   font-size: 20px;
   padding: 10px;
+  cursor: pointer;
 }
 
 .top_icons img {
   width: 25px;
   border-radius: 50%;
-  padding: 2px;
+  margin: 2px;
   border: 2px solid black;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile_picture > img {
+  width: 200px;
+  border-radius: 50%;
+  margin: 30px 90px 50px 50px;
+}
+
+.profile_info {
+  font-family: "Rajdhani", sans-serif;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-shrink: 0;
+}
+
+.profile_top {
+  display: flex;
+  align-items: center;
+}
+
+.profile_name {
+  font-size: 25px;
+  padding-right: 15px;
+}
+
+.profile_Edit {
+  margin-right: 15px;
+  padding: 2px 3px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid #968c83;
+  border-radius: 3px;
+}
+
+.profile_icon {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.profile_middle > span {
+  padding-right: 30px;
+}
+
+.profile_number {
+  font-weight: bold;
+}
+
+.profile_bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile_bottom > span:nth-child(1) {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.profile_cherry {
+  width: 15px;
+}
+
+.album {
+  border-top: 1px solid #968c83;
+}
+
+.album_menu {
+  display: flex;
+  justify-content: center;
+}
+
+.album_menu > li {
+  padding: 10px 30px;
+}
+
+.album_pictures {
+  column-count: 3;
+  column-gap: 10px;
+  display: inline-block;
+}
+
+.album_pictures > img {
+  width: 293px;
+  height: 293px;
+  margin: 5px 0;
 }
