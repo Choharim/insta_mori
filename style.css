@@ -25,20 +25,23 @@ body {
   font-family: "Lobster", cursive;
   font-size: 25px;
   cursor: pointer;
+  width: 300px;
 }
 
 .top_search > input {
-  text-align: center;
-  cursor: pointer;
   padding: 2px 3px;
   border: 1px solid #968c83;
   border-radius: 3px;
+  text-align: center;
+  cursor: pointer;
 }
 
 .top_icons {
   list-style: none;
   display: flex;
   align-items: center;
+  justify-content: flex-end;
+  width: 300px;
 }
 
 .top_icons > .top_icon {
@@ -62,7 +65,7 @@ body {
 .profile_picture > img {
   width: 200px;
   border-radius: 50%;
-  margin: 30px 90px 50px 50px;
+  margin: 30px 50px 50px 50px;
 }
 
 .profile_info {
@@ -92,6 +95,10 @@ body {
   background-color: transparent;
   border: 1px solid #968c83;
   border-radius: 3px;
+}
+
+.profile_Edit_2 {
+  display: none;
 }
 
 .profile_icon {
@@ -126,6 +133,7 @@ body {
 }
 
 .album_menu {
+  font-family: "Rajdhani", sans-serif;
   display: flex;
   justify-content: center;
 }
@@ -135,13 +143,106 @@ body {
 }
 
 .album_pictures {
+  display: flex;
+  flex-wrap: wrap;
   column-count: 3;
-  column-gap: 10px;
-  display: inline-block;
+  justify-content: space-around;
 }
 
 .album_pictures > img {
-  width: 293px;
-  height: 293px;
-  margin: 5px 0;
+  width: 250px;
+  height: 250px;
+  margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 840px) {
+  .top_logo {
+    position: sticky;
+    top: 10px;
+    left: 15px;
+  }
+
+  .top_search {
+    display: none;
+  }
+
+  .top_icons {
+    position: sticky;
+    top: 10px;
+    right: 15px;
+  }
+  .profile {
+    align-items: flex-start;
+  }
+  .profile_picture > img {
+    width: 90px;
+    border-radius: 50%;
+    margin: 15px;
+  }
+
+  .profile_info {
+    padding-top: 15px;
+    justify-content: flex-start;
+  }
+
+  .profile_name {
+    font-size: 30px;
+  }
+
+  .profile_Edit {
+    display: none;
+  }
+
+  .profile_icon {
+    font-size: 25px;
+  }
+
+  .profile_Edit_2 {
+    display: block;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #968c83;
+    border-radius: 3px;
+    width: 100%;
+    position: absolute;
+    top: 110px;
+    z-index: -1;
+  }
+  .profile_top + div {
+    position: absolute;
+    top: 250px;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+  }
+
+  .profile_middle {
+    padding: 10px 0;
+    border-top: 1px solid #968c83;
+    border-bottom: 1px solid #968c83;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+  }
+  .profile_middle > span {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .profile_bottom {
+    position: absolute;
+    top: 170px;
+    left: 15px;
+    z-index: -1;
+  }
+
+  .album_menu {
+    display: none;
+  }
+
+  .album {
+    border: none;
+    margin-top: 100px;
+  }
 }
