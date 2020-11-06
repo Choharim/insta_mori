@@ -2,6 +2,38 @@ body {
   background-color: #fff5ea;
 }
 
+.top_bar {
+  background-color: wheat;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
 .top_logo {
   font-family: "Lobster", cursive;
+  font-size: 25px;
+}
+
+.top_search > input {
+  text-align: center;
+}
+
+.top_icons {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.top_icons > .top_icon {
+  font-size: 20px;
+  padding: 10px;
+}
+
+.top_icons img {
+  width: 25px;
+  border-radius: 50%;
+  padding: 2px;
+  border: 2px solid black;
 }
