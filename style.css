@@ -238,11 +238,19 @@ body {
   }
 
   .album_menu {
+    justify-content: space-around;
+  }
+
+  .album_menu span {
     display: none;
+  }
+
+  .album_menu i {
+    font-size: 25px;
   }
 
   .album {
     border: none;
-    margin-top: 100px;
+    margin-top: 70px;
   }
 }
