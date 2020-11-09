@@ -272,13 +272,13 @@ body {
 .album_pictures {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+
   width: 100%;
 }
 
 .wrap {
-  width: calc(1 / 3 * 100% - 10px);
-  padding-bottom: 15px;
+  width: calc(1 / 3 * 100%);
+  padding: 5px;
 }
 
 .img {
@@ -302,10 +302,19 @@ body {
 .img.mori4 {
   background-image: url(./picture/4.jpg);
 }
+
 .img.mori5 {
   background-image: url(./picture/5.jpg);
 }
 
 .img.mori6 {
   background-image: url(./picture/6.jpg);
+}
+
+.img.mori7 {
+  background-image: url(./picture/7.jpg);
+}
+
+.img.mori8 {
+  background-image: url(./picture/8.jpg);
 }
